@@ -1,0 +1,145 @@
+.registro-notas {
+  display: none;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #f4f7fb;
+  padding: 5rem 1rem;
+}
+
+/* Formulario */
+.registro-formulario {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.registro-formulario h2 {
+  margin-bottom: 1rem;
+}
+
+.registro-formulario label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.registro-formulario input,
+.registro-formulario select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.registro-formulario button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  width: 100%;
+  background-color: #8f70d6;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.registro-formulario button:hover {
+  background-color: #A789EC;
+}
+
+/* Visualización */
+.registro-visual {
+  flex: 1;
+  background-color: #e9f0fa;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.registro-visual h2 {
+  margin-bottom: 1rem;
+}
+
+.registro-visual ul {
+  list-style: none;
+  padding: 0;
+}
+
+.registro-visual li {
+  background-color: #fff;
+  border-left: 5px solid #8f70d6;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.registro-visual li:hover {
+  transform: scale(1.01);
+}
+
+.registro-visual li h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #5d4ca7;
+}
+
+.registro-visual li p {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  white-space: pre-line; /* permite saltos de línea */
+}
+
+.registro-visual li small {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Barra de progreso visual */
+.barra-progreso {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 1rem;
+  overflow: hidden;
+  font-size: 0.95rem;
+}
+
+.progreso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #007bff;
+  opacity: 0.2;
+  border-radius: 8px 0 0 8px;
+  z-index: 1;
+}
+
+.barra-progreso span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .registro-notas {
+    flex-direction: column;
+  }
+}
+
+.btn-eliminar {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background-color: #d32f2f;
+}

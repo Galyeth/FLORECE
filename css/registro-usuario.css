@@ -1,0 +1,110 @@
+#seccion-registro,
+#seccion-login {
+    display: none;
+}
+.registro-usuario {
+  background-color: #f9f9f9;
+  padding: 6rem 1rem;
+  text-align: center;
+  position: fixed; /* ocupa toda la pantalla */
+  width: 100%;
+  height: 100vh; /* altura completa */
+  justify-content: center;
+  display: flex;
+}
+
+.registro-formulario {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.registro-formulario input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.registro-formulario button {
+  background-color: #8f70d6;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.registro-formulario button:hover {
+  background-color: #A789EC;
+  color: #000;
+}
+
+.registro-mensaje {
+  font-weight: bold;
+}
+
+.switch-form {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.switch-form a {
+  color: #8f70d6;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content p {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background-color: #8f70d6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.icono-check {
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
