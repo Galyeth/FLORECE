@@ -163,13 +163,10 @@ btnLoginExito.addEventListener("click", () => {
       sec.style.display = "none";
     }
   });
-  // Mostrar el menú de navegación
-  document.querySelector("nav").style.display = "flex";
-  // Mostrar la sección de journaling
-  document.querySelector(".registro-notas").style.display = "flex";
+  document.querySelector("nav").style.display = "flex"; // Mostrar el menú de navegación
+  document.querySelector(".registro-notas").style.display = "flex"; // Mostrar la sección de journaling
   document.querySelector(".registro-notas").scrollIntoView({ behavior: "smooth" });
-  // Mostrar entradas guardadas
-  mostrarEntradas();
+  mostrarEntradas(); // Mostrar entradas guardadas
 });
 
 
@@ -189,12 +186,10 @@ document.getElementById("journalingForm").addEventListener("submit", function (e
     contenido,
     fecha: fecha.toLocaleString()
   };
-  // Obtener entradas anteriores y guardar la nueva
-  const entradas = JSON.parse(localStorage.getItem("entradasJournal")) || [];
+  const entradas = JSON.parse(localStorage.getItem("entradasJournal")) || []; // Obtener entradas anteriores y guardar la nueva
   entradas.unshift(entrada); // Agregar al inicio
   localStorage.setItem("entradasJournal", JSON.stringify(entradas));
-  // Limpiar formulario y recargar lista
-  this.reset();
+  this.reset(); // Limpiar formulario y recargar lista
   mostrarEntradas();
 });
 
@@ -255,12 +250,8 @@ document.querySelectorAll('a[href^="#"]').forEach(enlace => {
       document.querySelectorAll("section").forEach(sec => {
         sec.style.display = sec.id === targetId ? "block" : "none";
       });
-
-      // Asegurar que el menú esté visible
-      document.querySelector("nav").style.display = "flex";
-
-      // Scroll suave a la sección
-      targetSection.scrollIntoView({ behavior: "smooth" });
+      document.querySelector("nav").style.display = "flex"; // Asegurar que el menú esté visible
+      targetSection.scrollIntoView({ behavior: "smooth" }); // Scroll suave a la sección
     }
   });
 });
