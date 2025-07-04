@@ -104,11 +104,18 @@ document.getElementById("formRegistro").addEventListener("submit", (e) => {
   const email = document.getElementById("registroEmail").value.trim();
   const password = document.getElementById("registroPassword").value;
 
+  if (!nombre || !email || !password) {
+    alert("Por favor, complete todos los campos del formulario");
+    return;
+  }
+  if (!validateEmail(email)) {
+    alert("Por favor, ingrese un correo valido");
+    return;
+  } 
   if (password.length < 6) {
     alert("La contraseña debe tener al menos 6 caracteres.");
     return;
   }
-
   if (localStorage.getItem(email)) {
     alert("Este correo ya está registrado.");
     return;
@@ -141,8 +148,16 @@ document.getElementById("formLogin").addEventListener("submit", function (e) {
 
   const email = document.getElementById("loginEmail").value.trim();
   const password = document.getElementById("loginPassword").value;
-
   const userData = localStorage.getItem(email);
+
+  if (!email || !password) {
+    alert("Por favor, complete todos los campos del formulario");
+    return;
+  }
+  if (!validateEmail(email)) {
+    alert("Por favor, ingrese un correo valido");
+    return;
+  }
   if (!userData) {
     alert("Este correo no está registrado.");
     return;
