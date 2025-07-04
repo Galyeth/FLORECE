@@ -97,32 +97,6 @@
   color: #666;
 }
 
-/* Barra de progreso visual */
-.barra-progreso {
-  position: relative;
-  background-color: white;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-  padding: 0.6rem 1rem;
-  overflow: hidden;
-  font-size: 0.95rem;
-}
-
-.progreso {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background-color: #007bff;
-  opacity: 0.2;
-  border-radius: 8px 0 0 8px;
-  z-index: 1;
-}
-
-.barra-progreso span {
-  position: relative;
-  z-index: 2;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
