@@ -110,7 +110,7 @@ body {
 }
 
 
-/* SECCIÓN HISTORIA */
+/* SECCIÓN INFORMACION */
 .informacion {
   padding-top: 6rem; /* Espacio superior para evitar que el menú tape el contenido */
   padding-bottom: 3rem; /* Espaciado inferior */
@@ -163,47 +163,8 @@ body {
   margin-top: 1rem; /* Espacio entre párrafos */
 }
 
-/* RESPONSIVE: MÓVILES */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* Mostrar botón hamburguesa en móviles */
-  }
 
-  .menu-horizontal {
-    display: none; /* Ocultar menú horizontal por defecto */
-    flex-direction: column; /* Mostrarlo en vertical al activarse */
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 5rem; /* Debajo del menú fijo */
-    left: 0;
-  }
-
-  .menu-horizontal.active {
-    display: flex; /* Mostrar menú al activar la clase */
-  }
-
-  .menu-horizontal li {
-    border-bottom: 1px solid #ccc; /* Líneas separadoras */
-  }
-
-  .informacion-contenido {
-    flex-direction: column; /* Apilar imagen y texto en móvil */
-    text-align: center;
-  }
-
-  .informacion-imagen img {
-    width: 90%; /* Reduce tamaño para pantallas pequeñas */
-    margin: 0 auto;
-  }
-
-  .informacion-texto {
-    font-size: 1.1rem;
-    font-family: "Edu NSW ACT Hand Pre", cursive;
-  }
-}
-
-/* SECCION PROPOSITO */
+/* SECCION CONTENIDO DISPONIBLE */
 .libreria {
   padding-top: 6rem;
   padding-bottom: 3rem;
@@ -252,6 +213,75 @@ body {
   border: none;
   border-radius: 0.5rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE: MÓVILES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostrar botón hamburguesa en móviles */
+  }
+
+  .menu-horizontal {
+    display: none; /* Ocultar menú horizontal por defecto */
+    flex-direction: column; /* Mostrarlo en vertical al activarse */
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem; /* Debajo del menú fijo */
+    left: 0;
+  }
+
+  .menu-horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase */
+  }
+
+  .menu-horizontal li {
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+  }
+
+  .informacion h2 {
+    margin: 15px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .informacion-contenido {
+    flex-direction: column; /* Apilar imagen y texto en móvil */
+    text-align: center;
+  }
+
+  .informacion-imagen img {
+    width: 90%; /* Reduce tamaño para pantallas pequeñas */
+    margin: 0 auto;
+  }
+
+  .informacion-texto {
+    font-size: 1.1rem;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+  }
+
+  /* SECCION CONTENIDO DISPONIBLE RESPONSIVO */
+  .libreria {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .libreria h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+
+  .libreria-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 
